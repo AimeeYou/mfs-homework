@@ -20,7 +20,7 @@
   </body>
  </html>
  ```
- [简书]（https://www.jianshu.com/）
+ [简书](https://www.jianshu.com/)
  
   | Item      |    Value | Qty  |
   | :-------- | --------:| :--: |
