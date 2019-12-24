@@ -102,4 +102,6 @@ F1 或 Ctrl+Shift+P : 打开命令面板。在打开的输入框内，可以输�
 
 ## 4、在visual studio code中使用git
     具体可参照下面给出的网址进行操作
-    https://blog.csdn.net/sacredness/article/details/89179435
+    [在visual studio code中使用git](https://blog.csdn.net/sacredness/article/details/89179435)
+    
+    
