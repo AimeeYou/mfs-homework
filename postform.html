@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>table2</title>
+
+</head>
+
+<body>
+
+<div>
+<form action="getinformation" method="post">
+<!--action属定义在提交表单时执行的动作。通常填写接受表单的 url；method 属性规定在提交表单时所用的 HTTP 方法（GET 或 POST）：-->
+<div class="username">
+<!--普通文本输入框，单文本-->
+	<label for="">昵称:&nbsp;</label>
+	<input type="text" name="name" placeholder="请输入昵称" />		
+</div>
+
+<div class="password">
+<label for="">密码：</label>
+<input type="password" name="password" placeholder="请输入密码" />
+</div>
+<div class="email">
+	
+</div>
+ <div class="sex" >
+    <label for="">性别:</label>
+    <input type="radio" name="sex" >男
+    <input type="radio" name="sex" >女
+ </div>
+ 
+<div class="datatime">
+	
+</div>
+<div class="select">
+      <label>所在城市:</label>
+    <select name="city">
+      <option value="sabor" selected>北京</option>
+      <option value="sabor" >上海</option>
+      <option value="sabor" >深圳</option>
+    </select>
+</div>
+
+ <div class="bobby">
+  	<label for="">技能：</label>
+  	<input type="checkbox" name="java" value="on" />java
+  	<input type="checkbox" name="web" value="on" /> web
+ </div>
+ 
+<div class="color">
+	
+</div>
+
+<div class="textarea">
+    <label for="">个性签名:</label>
+    <br />
+    <!--多文本输入框-->
+    <textarea name="article" placeholder="ddd" id="" cols="30" rows="10">          
+    </textarea>
+</div>
+<div class="file">
+<input type="file" name="fileupload" accept="image/*" />
+	
+</div> 
+<div class="submit" name="submit">
+	<button type="submit">提交按钮</button>
+	<button type="reset" class="reset" name="reset">重置</button> 	
+</div>
+	
+</form>	
+</div>
+</body>
+</html>
+
