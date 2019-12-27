@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>表单验证</title>
+</head>
+
+<body>
+
+<form action="getinformation" method="post">
+<!--action属定义在提交表单时执行的动作。通常填写接受表单的 url；method 属性规定在提交表单时所用的 HTTP 方法（GET 或 POST）：-->
+<div class="username">
+<!--普通文本输入框，单文本-->
+	<label >昵&nbsp;&nbsp;称:</label>
+	<input type="text" name="name" placeholder="请输入昵称" />		
+</div>
+<div class="pw">
+<label>密&nbsp;&nbsp;码：</label>
+<input type="text" name="pw" placeholder="输入密码" /> 
+	
+</div>
+<div class="email">
+<label>邮&nbsp;&nbsp;箱：</label>
+	<input type="email" name="email" placeholder="输入正确的邮箱地址"/>
+</div>
+ <div class="sex" >
+    <label for="">性&nbsp;&nbsp;别:</label>
+    <input type="radio" name="sex" >男
+    <input type="radio" name="sex" >女
+ </div>
+ <div>
+ 	数&nbsp;&nbsp;字：<input type="number" min="0" max="100" step="2">
+ </div>
+<div class="data">
+	出生日期：<input type="date" />
+</div>
+ <div class="select">
+    <label>所在城市:</label>  
+ 	<input list="city" />
+ 	<datalist id="city">
+ 		<option value="北京">
+ 		<option value="上海">
+ 		<option value="深圳">
+ 		<option value="广州">
+ 	</datalist>	
+ </div>
+ <div class="bobby">
+  	<label for="">技&nbsp;&nbsp;能：</label>
+  	<input type="checkbox" name="java" value="on" />java
+  	<input type="checkbox" name="web" value="on" /> web
+ </div>
+ 
+<div class="color">
+	
+</div>
+
+<div class="textarea">
+    <label for="">个性签名:</label>
+    <br />
+    <!--多文本输入框-->
+    <textarea name="article" placeholder="ddd" id="" cols="30" rows="10">          
+    </textarea>
+</div>
+<div class="file">
+<input type="file" name="fileupload" accept="image/*" />
+	
+</div> 
+<div class="submit" name="submit">
+	<button type="submit">提交按钮</button>
+	<button type="reset" class="reset" name="reset">重置</button> 	
+</div>
+	
+</form>	
+
+
+
+</body>
+</html>
+
+<!--
+2. 请写一个表单，需要有如下字段
+邮箱，必须是合法邮箱格式，必须填写
+数字，用户填写的值必须是介于 0 到 100 直接的所有偶数
+一个可以输入进行筛选的下拉框，包含四个选项
+北京
+上海
+广州
+深圳-->
