@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	padding: 0;
+	margin: 0;
+	background: #F1BDBE
+	font-family: 'open Sans', sans-serif;
+}
+label{
+	color: #649EBD;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	text-align: justify;
+}
+input{
+	background: #F8D6D7;
+	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing:1px;
+	color: #8E9ECC
+}
+
+.left {
+   float: left;
+   width: 100px;
+}
+.left a{
+   display: block
+}
+.right {
+   float: left;
+   width: calc(100% - 102px);
+   height: 100vh
+}
