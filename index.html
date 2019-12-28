@@ -18,8 +18,9 @@
 <!--action属定义在提交表单时执行的动作。通常填写接受表单的 url；method 属性规定在提交表单时所用的 HTTP 方法（GET 或 POST）：-->
 <div class="username">
 <!--普通文本输入框，单文本-->
-	<label >昵&nbsp;&nbsp;称:</label>
-	<input type="text" name="name" placeholder="请输入昵称" />		
+	<label for="name">昵&nbsp;&nbsp;称:</label>
+	<input type="text" name="name" id="name"placeholder="请输入昵称" />	
+	<!--label的for属性和input的id相对应，实现点击labelinput高亮-->	
 </div>
 <div class="pw">
 <label>密&nbsp;&nbsp;码：</label>
