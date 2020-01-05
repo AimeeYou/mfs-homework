@@ -16,7 +16,7 @@ body{
 }
 
 .header{
-    background-image: url(header-bg.jpg);
+    background-image: url(./header-bg.jpg);
     padding: 62px 0 51px 0;
     background-origin:padding-box;
     background-position-x:50%;
