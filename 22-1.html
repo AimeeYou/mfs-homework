@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navi</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .navi {
+            display: flex;
+            background-color: lightyellow;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            transition: background-color 0.5s;
+        }
+        .navi:hover {
+            background-color: yellow;
+        }
+        .item {
+            padding: 0 20px;
+        }
+        .down{
+            line-height: 50px;
+            position: relative;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: lightyellow;
+            position: absolute;
+            left: 0;
+            max-height: 0px;
+            transition: all 0.5s;
+            overflow: hidden;
+        }
+        .down:hover ul{
+            max-height: 100px;
+        }
+        .comm {
+            width: 64px;
+            margin: 0 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navi">
+        <div class="item" style="font-weight: bold;">码蜂社</div>
+        <div class="item">首页</div>
+        <div class="item">基础闯关班</div>
+        <div class="item">Web闯关班</div>
+        <div class="item">课程选择</div>
+        <div class="item down">社区<ul>
+                <li class="comm">论坛</li>
+                <li class="comm">闯关任务</li>
+            </ul>
+        </div>
+        <div class="item">关于我们</div>
+    </nav>
+</body>
+
+</html>
