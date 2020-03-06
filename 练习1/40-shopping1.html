@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="goods-list">
+        <div class="item"><button>0</button></div>
+        <div class="item"><button>1</button></div>
+        <div class="item"><button>2</button></div>
+        <div class="item"><button>3</button></div>
+        <div class="item"><button>4</button></div>
+        <div class="item"><button>5</button></div>
+        <div class="item"><button>6</button></div>
+        <div class="item"><button>7</button></div>
+        <div class="item"><button>8</button></div>
+        <div class="item"><button>9</button></div>
+    </div>
+    <div id="shopping-car"></div>
+    <script>
+        var btns = document.querySelectorAll(".goods-list>.item>button");
+        var shop_car = document.getElementById("shopping-car");
+        for (let i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                shop_car.innerHTML = shop_car.innerHTML + btns[i].innerHTML;
+                // document.cookie = "buy=" + shop_car.innerHTML;
+                localStorage.setItem("buy",shop_car.innerHTML);
+            });
+        }
+
+        /*
+        var cookieBuy = document.cookie.split("; ")
+            .map(i => { return i.split("="); })//切割为["key","value"]型数组
+            .filter(i => { return i[0] == "buy"; })[0];//过滤出keyname为"buy"的数组
+        if (0 != cookieBuy.length) {
+            shop_car.innerHTML = cookieBuy[1];
+        }
+        */
+       var localBuy=localStorage.getItem("buy");
+       if(localBuy){
+            shop_car.innerHTML = localBuy;
+       }
+    </script>
+</body>
+
+</html>
