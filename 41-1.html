@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>123
+     <iframe src="http://www.a.com:8000/canvas.html"></iframe>456
+    <script>
+        //同时在canvas中也降域为a.com
+        document.domain = "a.com"
+        setTimeout(() => {
+            console.log(window.frames[0].document.getElementById("test"))
+        }, 1000);
+</body>
+
+</html>
