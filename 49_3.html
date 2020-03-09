@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3图片懒加载</title>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>JS Bin</title>
+        <style>
+            .a {
+                height: 1000px;
+            }
+            
+            img {
+                height: 394px;
+                width: 650px;
+                background:darkseagreen;
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+        <div class="a"></div>
+        <div class="a"></div>
+        <img data-src="images/b.jpg"alt="">
+      
+        <div class="a"></div>
+        <div class="a"></div>
+        <script>
+            function isshow() {
+                var windowheight = window.innerHeight;
+                var srollheight = window.pageYOffset;
+                var imgtotop = $("img").offset().top;
+
+                return ((srollheight + windowheight) > imgtotop);
+            }
+
+            window.onscroll = function() {
+                console.log(isshow());
+                if (isshow()) {
+                    var img1 = document.getElementsByTagName("img");
+                    img1[0].setAttribute("src", $("img").data("src"));
+                }
+            }
+        </script>
+    </body>
+
+    </html>
+</body>
+
+</html>
